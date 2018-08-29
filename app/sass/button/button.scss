@@ -1,0 +1,63 @@
+.mainButton{
+    height: 42px;
+    border-radius: 8px;
+    background-color: $main-theme-color;
+    border: none;
+    font-size: 1em;
+    transition: all 0.4s;
+    @media screen and (max-width: 450px){
+        font-size: 1em;
+    }
+    &:hover{
+        box-shadow: 0 0 25px $main-theme-color;
+        color: #fff;
+    }
+    .mainButton_num{
+        border-radius: 8px;
+        background-color: #f24841;
+        color: #ffffff;
+        font-size: 18px;
+        padding: 3px 6px 3px 5px;
+        text-align: center;
+    }
+    .send_order{
+        width: 30px;
+        position: relative;
+        top: 4px;
+    }
+    .question{
+        width: 30px;
+        position: relative;
+        top: -2px;
+    }
+    
+}
+.LernMoreButton{
+    height: 42px;
+    border-radius: 8px;
+    background-color: #222b38;
+    border: none;
+    font-size: 24px;
+    transition: all 0.4s;
+    color: #fff;
+    padding: 0 60px;
+    text-transform: uppercase;
+    margin: 0 auto;
+    display: block;
+    &:hover{
+        box-shadow: 0 0 25px #deb90d;
+        color: #deb90d;
+    }
+    .question{
+        width: 30px;
+        position: relative;
+        top: -2px;
+    }
+}
+.mainButtonXL{
+    width: 88%;
+    height: 61px;
+    @media screen and (max-width: 767px){
+        height: max-content;
+    }
+}

@@ -1,0 +1,88 @@
+section.mainSection{
+    height: 100vh;
+    min-height: 914px;
+    @media screen and (max-width: 500px){
+        height: auto;
+        min-height: auto;
+    }
+    .mainBG{
+        // background-image: url("../img/R_bg/razbitaya-doroga-1024x576.jpg");
+        height: calc(100vh - 69px);
+        background-size: cover;
+        background-position: 40%;
+        @media screen and (max-width: 991px){
+            min-height: 100vh;
+            height: max-content;
+        }
+        @media screen and (max-width: 500px){
+            height: auto;
+            min-height: auto;
+        }
+        div.container{
+            visibility: hidden;
+        }
+    }
+    .rowMainSection{
+        margin: 50px 0 0  0;
+        @media screen and (max-width: 991px){
+            margin: 0;
+        }
+        @media screen and (max-width: 450px){
+            margin: 0;
+        }
+    }
+  
+    .mainSection_RigthSide{
+        &>div{
+            color: #fff;
+            background: #222b38c7;;
+            border-radius: 5px;
+            padding: 10px;
+            width: 50%;
+            margin: 150px auto 0 auto;
+            @media screen and (max-width: 991px) {
+                width: 100%;
+            }
+            
+            .title{
+                text-align: center;
+                font-size: 3.5em;
+                font-weight: 800;
+                text-transform: uppercase;
+                @media screen and (max-width: 601px) {
+                    font-size: 2em;
+                }
+                @media screen and (max-width: 450px){
+                    font-size: 2em;
+                }
+            }
+            ul{
+                list-style: disc;
+                padding: 0 0 0 20px;
+                font-size: 1.4em;
+            }
+            p{
+                font-size: 1.9em;
+                text-align: center;
+                @media screen and (max-width: 601px) {
+                    font-size: 1.4em;
+                }
+                @media screen and (max-width: 450px){
+                    font-size: 1em;
+                }
+            }
+            button{
+                margin: 0 auto;
+                display: block;
+                color: #000;
+                @media screen and (max-width: 601px) {
+                    font-size: 1.2em;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: 1em;
+                }
+            }
+        }
+      
+    }
+}
