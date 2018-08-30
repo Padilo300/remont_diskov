@@ -1,19 +1,36 @@
 
-@import 'variable.scss'                 ;
-@import 'button/button.scss'            ;
-@import 'mainSection/mainSection.scss'  ;
-@import 'mainSection/header.scss'       ;
-@import 'effect/effect.scss'    ;
-@import 'mainSection/mobile_menu.scss';
-@import 'section_1.scss'        ;
-@import 'section/section_2.scss';
-@import 'section/section_3.scss';
-@import 'section/section_4.scss';
-@import 'section/section_5.scss';
-@import 'section/section_6.scss';
-@import 'section/section_footer.scss'   ;
-@import 'page_info/first_section.scss'  ;
-@import 'page_info/article_previe.scss' ;
+@import 'variable.scss'                 ; // переменные
+@import 'button/button.scss'            ; // кнопки
+@import 'mainSection/mainSection.scss'  ; // первая секция 
+@import 'mainSection/header.scss'       ; // head
+@import 'effect/effect.scss'            ; // специальные эффекты
+@import 'mainSection/mobile_menu.scss'  ; // мобильное меню
+
+// home page
+@import 'pages/home/section/section_1.scss'        ; 
+@import 'pages/home/section/section_2.scss'        ;
+@import 'pages/home/section/section_3.scss'        ; 
+@import 'pages/home/section/section_4.scss'        ;
+@import 'pages/home/section/section_5.scss'        ;
+@import 'pages/home/section/section_6.scss'        ;
+@import 'pages/home/section/section_footer.scss'   ;
+
+// страница полезно знать
+@import 'pages/page_info/first_section.scss'  ;
+@import 'pages/page_info/article_previe.scss' ;
+
+// страница о компании
+@import 'pages/aboute/aboute.scss'                        ; 
+@import 'pages/aboute/section/first_section.scss'         ; 
+@import 'pages/aboute/section/section_abouteFigure.scss'  ; 
+@import 'pages/aboute/section/sectionAbouteFact.scss'     ; 
+@import 'pages/aboute/section/section_ourPeople.scss'     ; 
+
+
+// text
+@import 'text/text.scss';
+
+
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 ul{
     margin: 0;

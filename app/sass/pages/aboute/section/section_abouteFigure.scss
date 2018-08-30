@@ -1,0 +1,32 @@
+.aboute_figure{
+    height: max-content;
+    background-color: #222b38ad;
+    box-shadow: 0 0 50px 5px #000;
+    padding: 140px 0;
+    .figureFact{
+        height: 300px;
+        color: #fff;
+        &>p{
+            text-align: center;
+            font-size: 3em;
+            position: relative;
+            text-transform: uppercase;
+            color: #fff;
+            @media screen and (max-width: 1440px) {
+                font-size: 2em;
+            }
+            img{
+                max-width: 70px;
+                position: relative;
+                left: 0;
+                bottom: 10px;
+            }
+            span.benefits__number{
+                font-size: 3em;
+                color: #f9d635;
+            }
+                
+        }
+        
+    }
+}

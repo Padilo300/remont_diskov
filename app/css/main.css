@@ -67,40 +67,40 @@
       height: -moz-max-content;
       height: max-content; } }
 
-section.mainSection {
+section.HomeMainSection {
   height: 100vh;
   min-height: 914px; }
   @media screen and (max-width: 500px) {
-    section.mainSection {
+    section.HomeMainSection {
       height: auto;
       min-height: auto; } }
-  section.mainSection .mainBG {
+  section.HomeMainSection .mainBG {
     height: -webkit-calc(100vh - 69px);
     height: calc(100vh - 69px);
     -webkit-background-size: cover;
             background-size: cover;
     background-position: 40%; }
     @media screen and (max-width: 991px) {
-      section.mainSection .mainBG {
+      section.HomeMainSection .mainBG {
         min-height: 100vh;
         height: -webkit-max-content;
         height: -moz-max-content;
         height: max-content; } }
     @media screen and (max-width: 500px) {
-      section.mainSection .mainBG {
+      section.HomeMainSection .mainBG {
         height: auto;
         min-height: auto; } }
-    section.mainSection .mainBG div.container {
+    section.HomeMainSection .mainBG div.container {
       visibility: hidden; }
-  section.mainSection .rowMainSection {
+  section.HomeMainSection .rowMainSection {
     margin: 50px 0 0  0; }
     @media screen and (max-width: 991px) {
-      section.mainSection .rowMainSection {
+      section.HomeMainSection .rowMainSection {
         margin: 0; } }
     @media screen and (max-width: 450px) {
-      section.mainSection .rowMainSection {
+      section.HomeMainSection .rowMainSection {
         margin: 0; } }
-  section.mainSection .mainSection_RigthSide > div {
+  section.HomeMainSection .mainSection_RigthSide > div {
     color: #fff;
     background: #222b38c7;
     -webkit-border-radius: 5px;
@@ -109,55 +109,63 @@ section.mainSection {
     width: 50%;
     margin: 150px auto 0 auto; }
     @media screen and (max-width: 991px) {
-      section.mainSection .mainSection_RigthSide > div {
+      section.HomeMainSection .mainSection_RigthSide > div {
         width: 100%; } }
-    section.mainSection .mainSection_RigthSide > div .title {
+    section.HomeMainSection .mainSection_RigthSide > div .title {
       text-align: center;
       font-size: 3.5em;
       font-weight: 800;
       text-transform: uppercase; }
       @media screen and (max-width: 601px) {
-        section.mainSection .mainSection_RigthSide > div .title {
+        section.HomeMainSection .mainSection_RigthSide > div .title {
           font-size: 2em; } }
       @media screen and (max-width: 450px) {
-        section.mainSection .mainSection_RigthSide > div .title {
+        section.HomeMainSection .mainSection_RigthSide > div .title {
           font-size: 2em; } }
-    section.mainSection .mainSection_RigthSide > div ul {
+    section.HomeMainSection .mainSection_RigthSide > div ul {
       list-style: disc;
       padding: 0 0 0 20px;
       font-size: 1.4em; }
-    section.mainSection .mainSection_RigthSide > div p {
+    section.HomeMainSection .mainSection_RigthSide > div p {
       font-size: 1.9em;
       text-align: center; }
       @media screen and (max-width: 601px) {
-        section.mainSection .mainSection_RigthSide > div p {
+        section.HomeMainSection .mainSection_RigthSide > div p {
           font-size: 1.4em; } }
       @media screen and (max-width: 450px) {
-        section.mainSection .mainSection_RigthSide > div p {
+        section.HomeMainSection .mainSection_RigthSide > div p {
           font-size: 1em; } }
-    section.mainSection .mainSection_RigthSide > div button {
+    section.HomeMainSection .mainSection_RigthSide > div button {
       margin: 0 auto;
       display: block;
       color: #000; }
       @media screen and (max-width: 601px) {
-        section.mainSection .mainSection_RigthSide > div button {
+        section.HomeMainSection .mainSection_RigthSide > div button {
           font-size: 1.2em; } }
       @media screen and (max-width: 500px) {
-        section.mainSection .mainSection_RigthSide > div button {
+        section.HomeMainSection .mainSection_RigthSide > div button {
           font-size: 1em; } }
 
 #header {
   background-color: #222b38;
   padding-bottom: 5px;
   padding-top: 10px;
-  z-index: 10000; }
+  z-index: 10000;
+  -webkit-box-shadow: 0 0 25px 5px #4e4e4e;
+          box-shadow: 0 0 25px 5px #4e4e4e; }
   #header .textLogo {
     font-size: 2em;
     text-align: center;
     display: block;
     text-transform: uppercase;
     position: relative;
-    top: -8px; }
+    top: -8px;
+    -webkit-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s; }
+    #header .textLogo:hover {
+      text-shadow: 0 0 3px #ffe000;
+      color: #fff; }
     @media screen and (max-width: 1999px) {
       #header .textLogo {
         display: block;
@@ -349,6 +357,9 @@ section.mainSection {
   -webkit-transition: all 10s;
   -o-transition: all 10s;
   transition: all 10s; }
+
+.benefits__number {
+  opacity: 0; }
 
 .ham {
   cursor: pointer;
@@ -586,10 +597,13 @@ section.advantages figure {
 
 section.vacancies {
   margin-top: 150px;
-  background: #fff;
-  -webkit-box-shadow: 0 -19px 20px 0 #fff;
-          box-shadow: 0 -19px 20px 0 #fff;
   padding-top: 100px; }
+  section.vacancies > .container {
+    background: #2e353eb0;
+    -webkit-border-radius: 10px;
+            border-radius: 10px;
+    padding: 10px 10px;
+    color: #fff; }
   section.vacancies p.h3 {
     font-size: 1.3em;
     width: 80%;
@@ -1224,6 +1238,133 @@ footer.section_footer {
       @media screen and (max-width: 991px) {
         #page_info .section_articlePrevie .section_Previe .text_side button {
           float: none; } }
+
+p.AbouteTextSpecial {
+  background: #ffffffeb;
+  margin: 0;
+  height: 400px;
+  display: block;
+  -webkit-box-shadow: 0 0 30px 5px #444;
+          box-shadow: 0 0 30px 5px #444;
+  text-align: center;
+  line-height: 400px;
+  font-size: 4em;
+  font-weight: 900;
+  text-transform: uppercase; }
+  @media screen and (max-width: 1299px) {
+    p.AbouteTextSpecial {
+      font-size: 3em; } }
+  p.AbouteTextSpecial img {
+    max-height: 60px;
+    position: relative;
+    top: -6px;
+    right: -6px;
+    -webkit-border-radius: 2px;
+            border-radius: 2px; }
+    @media screen and (max-width: 1299px) {
+      p.AbouteTextSpecial img {
+        right: -5px; } }
+
+body#aboute {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 253, 0.25)), to(rgba(0, 0, 0, 0.38))), url("../img/R_bg/shina.jpg");
+  background: -webkit-linear-gradient(rgba(255, 253, 253, 0.25), rgba(0, 0, 0, 0.38)), url("../img/R_bg/shina.jpg");
+  background: -o-linear-gradient(rgba(255, 253, 253, 0.25), rgba(0, 0, 0, 0.38)), url("../img/R_bg/shina.jpg");
+  background: linear-gradient(rgba(255, 253, 253, 0.25), rgba(0, 0, 0, 0.38)), url("../img/R_bg/shina.jpg");
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-position: 50% -5%;
+  background-repeat: no-repeat;
+  background-attachment: fixed; }
+
+.AbouteMainSection .main_cover {
+  height: 100vh; }
+
+.articleWindow {
+  width: 80%;
+  display: block;
+  margin: 200px auto 0 auto;
+  text-align: center;
+  font-size: 2em;
+  background: #222b38ad;
+  color: #fff;
+  -webkit-border-radius: 5px;
+          border-radius: 5px;
+  padding: 20px 0;
+  -webkit-box-shadow: 0 0 30px 0 #222b38;
+          box-shadow: 0 0 30px 0 #222b38; }
+  @media screen and (min-width: 1440px) {
+    .articleWindow {
+      width: 70%; } }
+  .articleWindow h2 {
+    font-size: 1.4em; }
+  .articleWindow p {
+    font-size: 1.3em; }
+    @media screen and (max-width: 1740px) {
+      .articleWindow p {
+        font-size: 1em; } }
+
+.aboute_figure {
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  background-color: #222b38ad;
+  -webkit-box-shadow: 0 0 50px 5px #000;
+          box-shadow: 0 0 50px 5px #000;
+  padding: 140px 0; }
+  .aboute_figure .figureFact {
+    height: 300px;
+    color: #fff; }
+    .aboute_figure .figureFact > p {
+      text-align: center;
+      font-size: 3em;
+      position: relative;
+      text-transform: uppercase;
+      color: #fff; }
+      @media screen and (max-width: 1440px) {
+        .aboute_figure .figureFact > p {
+          font-size: 2em; } }
+      .aboute_figure .figureFact > p img {
+        max-width: 70px;
+        position: relative;
+        left: 0;
+        bottom: 10px; }
+      .aboute_figure .figureFact > p span.benefits__number {
+        font-size: 3em;
+        color: #f9d635; }
+
+.abouteFact {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 253, 0.25)), to(rgba(0, 0, 0, 0.38))), url("../img/R_bg/kolesa.jpg");
+  background: -webkit-linear-gradient(rgba(255, 253, 253, 0.25), rgba(0, 0, 0, 0.38)), url("../img/R_bg/kolesa.jpg");
+  background: -o-linear-gradient(rgba(255, 253, 253, 0.25), rgba(0, 0, 0, 0.38)), url("../img/R_bg/kolesa.jpg");
+  background: linear-gradient(rgba(255, 253, 253, 0.25), rgba(0, 0, 0, 0.38)), url("../img/R_bg/kolesa.jpg");
+  height: 500px;
+  -webkit-background-size: cover;
+          background-size: cover;
+  -webkit-background-size: 100% 100%;
+          background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-color: #fff;
+  background-attachment: fixed;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+
+.ourPeople {
+  min-height: 100vh;
+  background-color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 253, 253, 0.25)), to(rgba(0, 0, 0, 0.38))), url("../img/R_bg/Photo-49.jpg");
+  background: -webkit-linear-gradient(rgba(255, 253, 253, 0.25), rgba(0, 0, 0, 0.38)), url("../img/R_bg/Photo-49.jpg");
+  background: -o-linear-gradient(rgba(255, 253, 253, 0.25), rgba(0, 0, 0, 0.38)), url("../img/R_bg/Photo-49.jpg");
+  background: linear-gradient(rgba(255, 253, 253, 0.25), rgba(0, 0, 0, 0.38)), url("../img/R_bg/Photo-49.jpg");
+  -webkit-background-size: cover;
+          background-size: cover; }
+
+.textMshina, .textMshinaXL {
+  color: #fd3a37;
+  text-transform: uppercase; }
+
+.textMshinaXL {
+  font-size: 3em; }
 
 ul {
   margin: 0;

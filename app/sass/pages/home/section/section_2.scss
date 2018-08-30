@@ -1,0 +1,263 @@
+section.vacancies{
+    margin-top: 150px;
+    // background: #fff;
+    // box-shadow: 0 -19px 20px 0 #fff;
+    padding-top: 100px;
+    &>.container{
+        background: #2e353eb0;
+        border-radius: 10px;
+        padding: 10px 10px;
+        color: #fff;
+    }
+    p.h3{
+        font-size: 1.3em;
+        width: 80%;
+        margin: 0 auto 39px auto;
+        text-align: center;
+        mark{
+            color: #ffe000;
+            background: transparent;
+            font-size: 2.1em;
+            @media screen and (max-width: 500px){
+                font-size: 1.7em;
+             }
+        }
+    }
+    div.hotTex{
+        overflow: hidden;
+        span{
+            font-size: 1.3em;
+            position: relative;
+            &:before{
+                content: "";
+                display: block;
+                width: 9px;
+                height: 9px;
+                position: absolute;
+                background: #deb90c;
+                border-radius: 100%;
+                right: -22px;
+                top: 8px;
+            }
+            &:after{
+                content: "";
+                width: 3000%;
+                height: 1px;
+                background: #222b38;
+                position: absolute;
+                top: 12px;
+                left: 146%;
+                opacity: 0.26;
+            }
+        }
+    }
+    .vacancies_cart{
+        padding: 50px;
+        @media screen and (max-width: 601px) {
+            padding: 50px 0; 
+        }
+        &>div:nth-child(1){
+                section{
+                    .imgType{
+                        background-image: url('/img/R_help/remont-diskov-RLD03.jpg');
+                    }
+                }
+        }
+        &>div:nth-child(2){
+            section{
+                .imgType{
+                    background-image: url('/img/R_help/stalnoi.jpg');
+                    background-position: 37% 50%;
+                }
+            }
+        }
+        &>div:nth-child(3){
+            section{
+                .imgType{
+                    background-image: url('/img/R_help/litoi.jpeg');
+                    background-position: 37% 50%;
+                }
+            }
+        }
+        &>div:nth-child(4){
+            section{
+                .imgType{
+                    background-image: url('/img/R_help/zavod.jpg');
+                    background-position: 105% 50%;
+                }
+            }
+        }
+        &>div:nth-child(5){
+            section{
+                .imgType{
+                    background-image: url('/img/R_help/pravka_2.jpg');
+                    background-position: 0 50%;
+                }
+            }
+        }
+        &>div:nth-child(6){
+            section{
+                .imgType{
+                    background-image: url('/img/R_help/rim_restoration.png ');
+                    background-position: 0 50%;
+                }
+            }
+        }
+        &>div:nth-child(7){
+            section{
+                .imgType{
+                    background-image: url('/img/R_help/hqdefault.jpg');
+                    background-position: 50% 50%;
+                    background-size: 160%;
+                }
+            }
+        }
+        &>div:nth-child(8){
+            section{
+                .imgType{
+                    background-image: url('/img/R_help/litoi.jpeg');
+                    background-position: 50% 50%;
+                    background-size: 110%;
+                }
+            }
+        }
+        &>div:nth-child(9){
+            section{
+                .imgType{
+                    background-image: url('/img/R_help/dia.jpg');
+                    background-position: 95% 50%;
+                    background-size: 130%;
+                }
+            }
+        }
+        &>div:nth-child(10){
+            section{
+                .imgType{
+                    background-image: url('/img/R_help/not.jpeg');
+                    background-position: 67% 50%;
+                    background-size: cover;
+                }
+            }
+        }
+        &>div:nth-child(11){
+            section{
+                .imgType{
+                    background-color: #fff;
+                    background-image: url('/img/R_help/vilet.png');
+                    background-position: 50% 50%;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        &>div:nth-child(12){
+            section{
+                .imgType{
+                    background-color: #fff;
+                    background-image: url('/img/R_help/donor.jpg');
+                    background-position: 50% 50%;
+                    background-size: 100%;
+                    background-repeat: no-repeat;
+                }
+            }
+        }
+        section{
+            min-height: 350px;
+            box-shadow: 0 0 7px 1px rgba(47, 47, 47, 0.18);
+            border-radius: 8px;
+            background-color: #f3f3f3;
+            padding: 14px;
+            transition: all 0.4s;
+            margin: 0 0 30px 0;
+            &:hover{
+                box-shadow: 0 0 30px #333;
+                transform: scale(1.1) translate(0, -10px);
+            }
+            div.imgType{
+                
+                width: 100%;
+                height: 200px;
+                margin: 0 0 30px 0;
+                background-size: cover;
+                border-radius: 24px;
+            }
+            h3{
+                font-size: 1.2em;
+                color: #000;
+                text-align: left;
+                font-weight: 800;
+                margin: 0 0 15px 0;
+                position: relative;
+                text-align: center;
+                &:after{
+                    content: "";
+                    display: block;
+                    position: static;
+                    width: 83px;
+                    height: 3px;
+                    background-color: #deb90d;
+                    bottom: -13px;
+                    margin: 20px auto 0 auto;
+                }
+            }
+            .mainButton{
+                font-size: 1.3em;
+                width: 100%;
+                @media screen and (max-width: 601px) {
+                    font-size: 1em;
+                }
+            }
+            ul{
+                margin: 0 0 17px 0;
+                li{
+                    margin: 0 0 10px 0;
+                    table{
+                        tr{
+                            td{
+                                &:first-child{
+                                    vertical-align: top;
+                                }
+                            }
+                        }
+                    }
+                    span{
+                        margin: 0 5px 0 0;
+                        width: 24px;
+                        &.dollar {
+                            background-position: 4px -242px;
+                        }
+                        &.marker {
+                            background-position: 2px -196px;
+                        }
+                        &.clock {
+                            background-position: -1px -153px;
+                        }
+                        &.home {
+                            background-position: 1px -175px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .contentBottom{
+        p.textBottom{
+            width: 60%;
+            margin: 40px auto;
+            @media screen and (max-width: 991px){
+                width: 100%;
+            }
+            
+        }
+        button{
+            width: 50%;
+            height: 61px;
+            margin: 0 auto;
+            display: block;
+
+            @media screen and (max-width: 991px){
+                width: 90%;
+            }
+        }
+    }
+}

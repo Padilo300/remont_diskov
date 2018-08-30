@@ -1,0 +1,37 @@
+body#aboute{
+    background: linear-gradient(rgba(255, 253, 253, 0.25), rgba(0, 0, 0, 0.38)),  url('../img/R_bg/shina.jpg');
+    background-size: 100% 100%;
+    background-position: 50% -5%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.AbouteMainSection{
+    .main_cover{
+        height: 100vh;
+    }
+}
+.articleWindow{
+    width: 80%;
+    display: block;
+    margin: 200px auto 0 auto;
+    text-align: center;
+    font-size: 2em;
+    background: #222b38ad;
+    color: #fff;
+    border-radius: 5px;
+    padding: 20px 0;
+    box-shadow: 0 0 30px 0 #222b38;
+    @media screen and (min-width: 1440px) {
+        width: 70%;
+    }
+    h2{
+        font-size: 1.4em;
+    }
+    p{
+        font-size: 1.3em;
+        @media screen and (max-width: 1740px){
+            font-size: 1em;
+        }
+    }
+}

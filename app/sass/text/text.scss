@@ -1,0 +1,8 @@
+.textMshina{
+    color: $textMshina;   
+    text-transform: uppercase;
+}
+.textMshinaXL{
+    @extend .textMshina;
+    font-size: 3em;
+}
